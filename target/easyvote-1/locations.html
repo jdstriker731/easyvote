@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+    <title>EasyVote</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <header>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">EasyVote</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Home</a>
+          <li><a href="candidates.html">Candidate Info</a></li>
+          <li class="active"><a href="locations.html">Poll Locations</a></li>
+          <li><a href="translation.html">Translate</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <body onload="showPollingLocationData()">
+    <form id="map-form" method="POST" action="/new-polling-location">
+      <p>Please put in the address of a nearby polling location:</p>
+      <input type="text" name="address">
+      </br></br>
+      <button>Submit</button>
+    </form>
+    <div id="map"></div>
+  <footer>  
+  </footer>
+    <script src="script.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCib_0RH1hdeDTEpXE4QDt2EVukkmH3jvI"
+        type="text/javascript"></script>
+  </body>
+</html>
