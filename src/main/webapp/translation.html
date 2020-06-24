@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+    <title>EasyVote</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">EasyVote</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Home</a>
+            <li><a href="candidates.html">Candidate Info</a></li>
+            <li><a href="locations.html">Poll Locations</a></li>
+            <li><a href="translation.html">Translate</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <footer>
+    </footer>
+    <div>
+      <h1>Translation</h1>
+      <p>Type a message and select a language, then click submit to translate it.</p>
+
+      <textarea id="text"></textarea>
+
+      <select id="language">
+        <option value="es">English</option>
+        <option value="zh">Chinese</option>
+        <option value="es">Spanish</option>
+        <option value="hi">Hindi</option>
+        <option value="ar">Arabic</option>
+      </select>
+
+      <button onclick="requestTranslation();">Translate</button>
+
+      <hr/>
+      <div id="result"></div>    
+    </div>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
